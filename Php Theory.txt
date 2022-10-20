@@ -1,0 +1,90 @@
+Php (Personal Home Page) :-
+
+-> Initial Php was develop to maintain Personal Home Page i.e to known who have visited the page & count number of visitors.
+
+-> First version of Php was developed by "Rasmus Lerdorf" in 1994 as a set of web publishing macrows.
+
+-> This web release as the Personal Home Page tools & later rewritten & extended to include a package call "the form interpreter".
+
+-> Php is now official known as Php : Hypertext Preprocessor.
+
+-> It is a server-side scripting language usually written in an html context.
+
+-> Unlike other html page Php page is not direct send to a client by a server instead it is parse by the Php binary or module.
+
+
+* Steps to create folder for Php program in WampServer :-
+
+-> In C Drive -> in wamp64 -> inside 'www' folder -> create new folder with name ("Php21") or with any name you want.
+
+-> (This step only for those who had wampserver with version 3.2.3 or greater). Go to 'index.php' file [which is inside 'www' folder] 
+    press 'Crtl + f' & write "aliascontent" & press "find next" -> then after finding complete -> go down in "$aliascontent" -> where you see 
+    or if you won't see then -> this is it, copy this ($aliascontents .= '<li><a href="'.str_replace('.conf','',$file).'/">'.str_replace('.conf','',$file).'</a></li>';)
+    -> copy the entire code of '$aliascontents' from between single quote ↑ -> then press 'Crtl + f' -> Write "project" & press "find next" -> then after finding complete 
+    -> go down in "$projectContents" -> where you see ('$projectContents .= ') -> if any thing is written in this, then delete all code between -> ('') & then after '='
+    paste the code which we have copy earlier.
+
+
+* Steps for running Php Program :-     
+
+-> Start WampServer -> left click on wamp symbol in taskbar -> click on "localhost" ... this will open a wampserver page in browser.
+
+-> In that page you will see "Your Projects" ... in that there is a folder which we made in "www" folder earlier -> This folder will contain all our Php files.
+
+-> For running any Php files just click on it but after this procedure ↑.
+
+
+* Difference between 'echo' & 'print' :-
+
+            echo
+
+-> It can pass multiple strings separated by comma (,).
+-> It doesn't return any value.
+-> It is faster than print.
+-> It can't be use in expression.
+
+            print
+
+-> It cannot pass multiple arguments.
+-> It always return's once.
+-> It is slower than echo.
+-> It can be use in expression.
+
+
+-> For calling same file using action tag in html or php file, we have 2 methods :-
+    1) <form name="f1" action="write same filename">
+            eg :- <form name="f1" action="menu.php">
+
+    2) <form name="f2" action="<?php $_SERVER['PHP_SELF']?>">
+
+
+* CRUD means :- Create /Insert, Read, Update, Delete.
+
+
+* Creating Database & Tables in 'PhpMyAdmin', steps are given below :-
+
+-> First of all, start 'WampServer' ... left click on 'wamp symbol' in taskbar -> click on 'PhpMyAdmin' ...
+    this will open a 'PhpMyAdmin page' in browser.
+
+-> In that page you will see a welcome screen ...  in that screen simply just click 'GO' button, don't change or 
+    write anything just click button.
+
+-> After clicking button ... you see on left side databases, that you created, in the top of that side you see 'New' ...
+    click on 'New' to create a Database.
+
+-> After clicking 'New' ... Write a 'database name' & simply click on 'Create'. This will create a database.
+
+
+* For adding tables (Procedure is same for all tables) :- 
+
+-> Click on your created database ... After clicking you will see a panel in the top of the right side ... 
+    In that panel you will see 'Structure', 'SQL', 'Search', etc.
+
+-> In that panel, click on 'Operations' ... After clicking write 'Table name' & select/write 'no.of columns'
+    in table & click 'GO' button.
+
+-> After that, you will see ... 'Name', 'Type', 'Length/Values', etc in that, we have to add name, type & value ...
+    after adding this ... just click on 'Save' button.
+
+-> This will create table, after creating table ... click on 'insert' in panel ... then add data in 'Value' box
+    ... after adding -> click on 'GO'. This will insert data in table.            
